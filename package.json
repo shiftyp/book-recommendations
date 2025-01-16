@@ -7,7 +7,8 @@
         "packages": [
             "./apps/frontend",
             "./apps/auth",
-            "./packages/components"
+            "./packages/components",
+            "./packages/db"
         ]
     }
 }

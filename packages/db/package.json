@@ -1,0 +1,16 @@
+{
+  "name": "@moon-app/db",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "drizzle-orm": "0.38.3",
+    "dotenv": "16.4.7",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "@types/pg": "8.11.10",
+    "drizzle-kit": "0.30.1"
+  }
+}

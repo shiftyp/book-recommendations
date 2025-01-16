@@ -1,8 +1,9 @@
 import { List, ListItem, ListItemText } from "@mui/material"
+import { Book } from '@moon-app/db/src/schema'
 import React from "react"
 
 export const BookList = ({ books }: {
-    books: string[]
+    books: Book[]
 }) => {
     return (
         <List
@@ -20,7 +21,8 @@ export const BookList = ({ books }: {
             {books.map((book) => (
                 <ListItem>
                     <ListItemText
-                        primary={book}
+                        primary={book.name}
+                        secondary={book.author}
                     />
                 </ListItem>
             ))}
