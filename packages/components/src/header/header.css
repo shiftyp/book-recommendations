@@ -1,0 +1,13 @@
+.test-hello{
+    color:rgb(65, 109, 255)
+}
+
+.test-bye{
+    color:rgb(195, 65, 255)
+}
+
+.test-box{
+    align-self: center;
+    align-items: center;
+    padding: 5px;
+}

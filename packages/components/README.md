@@ -48,3 +48,14 @@ export default tseslint.config({
   },
 })
 ```
+
+# RUN Cosmos
+- Download dependencies, in terminal
+```
+yarn
+```
+Then, write...
+```
+yarn workspace @moon-app/components run cosmos
+```
+
