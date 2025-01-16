@@ -2,6 +2,9 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <span>Hello</span>
+    <div>
+      <span>Hello</span>
+      <h1>USER</h1>
+    </div>
   );
 }
