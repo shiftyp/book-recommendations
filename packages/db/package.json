@@ -4,6 +4,9 @@
   "private": true,
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "push": "drizzle-kit push"
+  },
   "dependencies": {
     "drizzle-orm": "0.38.3",
     "dotenv": "16.4.7",
