@@ -9,6 +9,9 @@
             "./apps/auth",
             "./packages/components",
             "./packages/db"
+        ],
+        "nohoist": [
+            "./packages/components"
         ]
     }
 }
