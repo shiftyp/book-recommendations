@@ -1,6 +1,6 @@
 import { BookFormData } from "@/components/book-form-data"
 
-export default () => {
+const Page = () => {
     return (
         <>
             <h2>Create a book!</h2>
@@ -8,3 +8,5 @@ export default () => {
         </>
     )
 }
+
+export default Page

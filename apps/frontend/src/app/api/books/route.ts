@@ -11,7 +11,7 @@ export const POST = async (request: Request) => {
     return Response.json(newBook)
 }
 
-export const GET = async (request: Request, response: Response) => {
+export const GET = async (request: Request) => {
     const { searchParams } = new URL(request.url);
     const name = searchParams.get('name') ?? ""
     const sort = searchParams.get('sort') ?? ""

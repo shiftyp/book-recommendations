@@ -7,7 +7,7 @@ export const BookFormData = () => {
     return (
         <BookForm onSubmit={
             async (book: NewBook) => {
-                const response = await fetch('/api/books', {
+                await fetch('/api/books', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

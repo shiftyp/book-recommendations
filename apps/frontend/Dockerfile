@@ -25,7 +25,7 @@ COPY . .
 RUN yarn --frozen-lockfile
 
 # Build application
-RUN yarn workspace @moon-app/frontend run build
+RUN yarn workspace @books/frontend run build
 
 # Final stage for app image
 FROM base
@@ -38,4 +38,4 @@ ENTRYPOINT [ "/app/apps/frontend/docker-entrypoint.js" ]
 
 # Start the server by default, this can be overwritten at runtime
 EXPOSE 3000
-CMD [ "yarn", "workspace", "@moon-app/frontend", "run", "start" ]
+CMD [ "yarn", "workspace", "@books/frontend", "run", "start" ]
