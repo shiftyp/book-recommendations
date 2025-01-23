@@ -1,0 +1,22 @@
+# fly.toml app configuration file generated for supertokens-wandering-snow-1283 on 2025-01-22T16:06:29Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'supertokens-wandering-snow-1283'
+primary_region = 'ewr'
+
+[build]
+  image = 'registry.supertokens.io/supertokens/supertokens-postgresql'
+
+[http_service]
+  internal_port = 3567
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

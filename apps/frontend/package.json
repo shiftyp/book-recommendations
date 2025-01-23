@@ -16,7 +16,11 @@
     "@books/db": "*",
     "@mdx-js/loader": "3.1.0",
     "@next/mdx": "15.1.5",
-    "@mdx-js/react": "3.1.0"
+    "@mdx-js/react": "3.1.0",
+    "supertokens-node": "21.1.0",
+    "supertokens-web-js": "0.14.0",
+    "supertokens-auth-react": "0.48.0",
+    "nextjs-cors": "2.2.0"
   },
   "devDependencies": {
     "typescript": "^5",

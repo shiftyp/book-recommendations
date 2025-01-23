@@ -5,11 +5,10 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.nodejs_20
+    pkgs.nodejs_latest
     pkgs.flyctl
     pkgs.yarn
     pkgs.yarn-bash-completion
-    pkgs.docker
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -21,8 +20,7 @@
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
-      "denoland.vscode-deno"
-      "ms-azuretools.vscode-docker"
+      "unifiedjs.vscode-mdx"
       "tamasfe.even-better-toml"
     ];
     workspace = {

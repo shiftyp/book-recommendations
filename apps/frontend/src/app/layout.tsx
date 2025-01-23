@@ -1,4 +1,5 @@
 import { Header } from '@books/components/src/header/header'
+import { SuperTokensProvider } from "../components/supertokensProvider";
 import './globals.css'
 
 export const metadata = {
@@ -14,10 +15,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main className="container mx-auto px-4 py-8 max-w-3xl">
-          {children}
-        </main>
+        {/* @ts-expect-error becasuse I said so*/}
+        <SuperTokensProvider>
+          <Header />
+          <main className="container mx-auto px-4 py-8 max-w-3xl">
+            {children}
+          </main>
+        </SuperTokensProvider>
       </body>
     </html>
   );
